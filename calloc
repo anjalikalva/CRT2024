@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int *a;
+    a=(int*)calloc(5,sizeof(int));
+    int i;
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",(a+i));
+    }
+    for(i=0;i<5;i++)
+    {
+        printf("%d address=%u\n",*(a+i),(a+i));
+    }
+    
+}5
+9
+7
+6
+4
+5 address=13595296
+9 address=13595300
+7 address=13595304
+6 address=13595308
+4 address=13595312
+
+
+=== Code Execution Successful ===
